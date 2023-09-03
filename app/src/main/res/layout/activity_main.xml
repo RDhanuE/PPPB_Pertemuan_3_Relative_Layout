@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/background_opetarion"
+        android:textSize="36sp"
+        android:padding="10sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="@string/default_text"
+        android:autoSizeMinTextSize="24sp"
+        android:autoSizeMaxTextSize="36sp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/result"
+        android:id="@+id/row_1"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:textSize="30dp"
+            android:layout_height="@dimen/button_size"
+            android:background="@drawable/background_keyboard"
+            android:layout_below="@id/result"
+            android:layout_marginTop="40dp"
+            android:text="1"
+            android:id="@+id/button_1"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:text="2"
+            android:id="@+id/button_2"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:text="3"
+            android:id="@+id/button_3"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:text="-"
+            android:id="@+id/button_mines"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/row_1"
+        android:id="@+id/row_2"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:layout_below="@id/result"
+            android:text="4"
+            android:id="@+id/button_4"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:text="5"
+            android:id="@+id/button_5"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:text="6"
+            android:id="@+id/button_6"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:text="/"
+            android:id="@+id/button_divide"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/row_2"
+        android:id="@+id/row_3"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:layout_below="@id/result"
+            android:text="7"
+            android:id="@+id/button_7"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:text="8"
+            android:id="@+id/button_8"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:text="9"
+            android:id="@+id/button_9"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:text="X"
+            android:id="@+id/button_multiply"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/row_3"
+        android:id="@+id/row_4"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:text="DEL"
+            android:id="@+id/button_delete"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:text="0"
+            android:id="@+id/button_0"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:text="+"
+            android:id="@+id/button_plus"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_size"
+            android:textSize="30dp"
+            android:background="@drawable/background_keyboard"
+            android:text="="
+            android:id="@+id/button_equal"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:onClick="input"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
